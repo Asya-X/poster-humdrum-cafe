@@ -1,0 +1,412 @@
+*{ box-sizing: border-box;}
+
+.one{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.name{
+    height: 8vw;
+    width: 50vw;
+    background: #F20CDB;
+    color: #FFF500;
+    font-family: HelveticaRegular;
+    font-size: 6vw;
+    font-variant-caps: all-small-caps;
+}
+
+.texture1{
+    height: 8vw;
+    width: 25vw;
+    overflow: hidden;
+}
+
+.texture1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.place{
+    height: 8vw;
+    width: 25vw;
+    color: #F20200;
+    background: #FFF500;
+    font-family: HelveticaRegular;
+    font-size: 1.6vw;
+}
+
+
+.two{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.pattern2{
+    object-fit: cover;
+    animation: pattern 2s ease-in-out infinite ;
+}
+
+/* @keyframes pattern {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} */
+
+.runningline {
+    height: 2vw;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-self: center;
+    overflow: hidden; 
+    white-space: nowrap;
+    background-color: #EB6200;
+}
+
+.runningline p {
+    display: inline-block; 
+    animation: runningline 4s infinite linear ;
+    font-family: HelveticaRegular;
+    color: #FFF500;
+    font-size: 1.6vw;
+    margin-left: 10%;
+}
+
+@keyframes runningline {
+    0% {
+        transform: translateX(-101%);
+    }
+
+    100% {
+        transform: translateX(101%);
+    }
+}
+
+.three{
+    overflow: hidden;
+    display: block;
+    height: 50vw;
+    width: 100vw;
+    background-image: url(../image/png/texture22.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: HelveticaRegular;
+    font-size: 1.6vw;
+}
+
+.main {
+    position: absolute;
+    color: #FFF500;
+    z-index: 100;
+}
+
+.main.one {
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+.main.two {
+    margin-left: 1vw;
+    margin-top: 8vw;
+  }
+
+.main:hover {
+    color: #F20CDB;
+  }
+
+.cup1{
+    height: 30vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    display: inline-block; 
+    animation: cup1 20s infinite linear ;
+}
+
+@keyframes cup1 {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.cup2{
+    position: absolute;
+    height: 30vw;
+    margin-left: -2vw;
+    margin-top: 10vw;
+    display: inline-block; 
+    animation: cup2 25s infinite linear ;
+}
+
+@keyframes cup2 {
+    100% {
+        rotate: -360deg;
+    }
+}
+  
+.cup3{
+    height: 40vw;
+    margin-top: -30vw;
+    margin-left: 72vw;
+    display: inline-block; 
+    animation: cup3 30s infinite linear ;
+}
+
+@keyframes cup3 {
+    100% {
+        rotate: 360deg;
+    }
+}
+  
+.synth {
+    position: absolute;
+    z-index: 100;
+    margin-left: 38vw;
+    margin-top: 1vw;
+    /* margin-top: 3.2vw; */
+    color: white;
+  }
+  
+.synth:hover {
+    color: #F20CDB;
+  }
+  
+.line{
+    margin-top: 6vw;
+    height: 2vw;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+.four{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    /* height: 50vw;
+    width: 100vw; */
+    font-family: HelveticaRegular;
+    font-size: 1.6vw;
+}
+
+.leftbox{
+    height: 50vw;
+    width: 40vw;
+    background-image: url(../image/svg/lines.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.lemon{
+    height: 50vw;
+    width: 45vw;
+    margin-top: 3vw;
+    margin-left: -1.5vw;
+    animation: lemonmoves  3s infinite ease-in-out ;
+}
+  
+@keyframes lemonmoves {
+
+    0% {
+        rotate: 10deg;
+    }
+
+    50% {
+        rotate: 110deg;
+    }
+
+    100% {
+        rotate: 10deg;
+    }
+}
+
+.rightbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.antonbox{
+    height: 40vw;
+    width: 60vw;
+    background-image: url(../image/png/paint.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.antonbox p{
+    height: 7vw;
+    width: 20vw;
+    margin-left: 6vw;
+    margin-top:4vw;
+    font-family: HelveticaRegular;
+    color: white;
+    background: #F20200;
+
+}
+
+.antonbox span{
+    position: absolute;
+    font-family: HelveticaRegular;
+    font-size: 30vw;
+    color: #F20CDB;
+}
+
+
+.antonbox span:hover {
+    color:#FFF500;
+  }
+  
+
+.text{
+    background:#EB6200;
+    font-family: HelveticaRegular;
+    font-size: 5vw;
+    font-variant-caps: all-small-caps;
+    color: white;
+}
+
+.a{
+    margin-left: 1vw;
+    margin-top: -1vw;
+}
+
+.n{
+    margin-left: 17vw;
+    margin-top: -12vw;
+    /* transform: rotate(340deg); */
+}
+
+.t{
+    margin-left: 26vw;
+    margin-top: -4vw;
+    transform: scale(1.2)
+}
+
+.o{
+    margin-left: 37vw;
+    margin-top: -15vw;
+    transform: scale(1.1); 
+    transform: rotate(40deg);
+}
+
+.nn{
+    margin-left: 40vw;
+    margin-top: -1vw;
+    transform: rotate(340deg);
+}
+
+.five{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    /* height: 50vw;
+    width: 100vw; */
+}
+
+.endblocks{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.endleft{
+    height: 60vw;
+    width: 40vw;
+    background-image: url(../image/svg/texture4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.markings{
+    height: 60vw;
+    width: 40vw;
+}
+
+.endright{
+    height: 60vw;
+    width: 60vw;
+}
+
+.box{
+    height: 47vw;
+    width: 57vw;
+    display: flex;
+    flex-direction: row;
+    padding: 3vw;
+    margin: 2vw;
+    background-color: aqua;
+}
+
+.box img{
+    overflow: hidden;
+    /* display: flex; */
+    flex-wrap: wrap;
+    height: 20vw;
+    gap: 2vw;
+}
+
+.podval{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* height: 50vw;
+    width: 100vw; */
+    font-family: HelveticaRegular;
+    font-size: 5vw;
+    font-variant-caps: all-small-caps;
+    color:#EB6200;
+}
+
+.line-rose{
+    background-image: url(../image/png/gold.png);
+    background-color: #F20CDB;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2vw;
+    width: 100vw;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+
+.runningline2{
+display: flex;
+align-self: center;
+background-image: url(../image/png/blood-yr.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 5vw;
+width: 100vw;
+overflow: hidden;
+}
+
+.runningline2 span {
+    display: inline-block; 
+    animation: runningline2 5s infinite linear;
+}
+
+@keyframes runningline2 {
+    0% {
+        transform: translateX(-110%);
+    }
+
+    100% {
+        transform: translateX(140%);
+    }
+}
+
+.runningline2 span:hover {
+    animation-play-state: paused;
+}
